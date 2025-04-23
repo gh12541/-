@@ -2,29 +2,33 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>我的作品集</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的第一個網頁</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 50px; }
-    h1 { color: #3366cc; }
-    .project { margin: 20px; }
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #3366cc;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
-  <h1>你好，我是小王</h1>
-  <p>這是我的作品集</p>
+  <h1>歡迎來到我的網頁！</h1>
+  <p>這是我寫的第一個網站。</p>
+  <button onclick="sayHello()">點我一下</button>
 
-  <div class="project">
-    <h2>🎨 作品一：設計名片</h2>
-    <p>用 Illustrator 設計的商務名片。</p>
-  </div>
-
-  <div class="project">
-    <h2>📸 作品二：街頭攝影</h2>
-    <p>用 iPhone 拍攝的系列照片。</p>
-  </div>
-
-  <footer>
-    <p>聯絡我：<a href="mailto:you@example.com">you@example.com</a></p>
-  </footer>
+  <script>
+    function sayHello() {
+      alert("你好！感謝你點我！");
+    }
+  </script>
 </body>
 </html>
